@@ -1,0 +1,773 @@
+body{
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.first-container{
+  height: 150px;
+  background-color: rgb(247, 247, 247);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.image{
+  padding-right: 51px;
+}
+
+.about{
+  padding-left: 21px;
+  width: 300px;
+}
+
+.whatsapp{
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  color: rgb(84, 89, 95);
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  text-align: start;
+}
+
+.number{
+  color: rgb(22, 37, 66);
+  font-weight: 700;
+  font-size: 22px;
+  text-align: start;
+  margin-top: 0px;
+}
+
+.fa-square-whatsapp{
+  margin-bottom: 10px;
+  text-align: center;
+  color: rgb(182, 140, 90);
+  font-size: 36px;
+}
+
+.contact{
+  padding-left: 21px;
+  margin-bottom: 12px;
+}
+
+.contact-us{
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  color: rgb(84, 89, 95);
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  text-align: start;
+}
+
+.contact-mail{
+  font-size: 12px;
+  font-weight:bold;
+}
+
+.icons{
+  padding-left: 51px;
+}
+
+.fa-instagram{
+  padding: 10px;
+  background-color: purple;
+  color: white;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+.fa-tiktok{
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+.art{
+  text-align: center;
+  color: rgb(182, 140, 90);
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.second-container{
+  background-color: rgb(247, 247, 247);
+  height: 80px;
+  z-index: 1;
+}
+.main-page{
+  background-color: white;
+  z-index: 2;
+  width: 60%;
+  display: flex;
+  height: 80px;
+  margin-left: 400px;
+}
+
+
+.main, .divorce, .about-us, .articles, .questions{
+  margin-left: 30px;
+  margin-top: 30px;
+  font-size: 14px; /* increased font size */
+  font-weight: bold;
+  color: rgb(84, 89, 95);
+  margin-bottom: 10px; /* added margin to move text down */
+  position: relative;
+  cursor: pointer;
+}
+
+.active-tab:hover::after {
+  content: "";
+  position: absolute;
+  margin-bottom: 0px;
+  left: 0;
+  bottom: 8px;
+  height: 3px; /* thickness of the underline */
+  width: 130%; /* make the underline 20% longer than the text */
+  background-color: currentColor;
+  transform: translateX(-12%); /* move the underline 10% to the left */
+  transition: 0.5s;
+  color: rgb(182, 140, 90);
+}
+
+.main.active-tab::after{
+  color: rgb(182, 140, 90);
+  transition: 0.5s;
+}
+
+.main:hover, .divorce:hover, .about-us:hover, .articles:hover, .questions:hover{
+  color: rgb(182, 140, 90);
+  transition: all .3s;
+}
+
+.arrow-down{
+  margin-left: 25%;
+  margin-top: 30px;
+  font-size: 20px; /* increased font size */
+  font-weight: bold;
+  margin-bottom: 10px; /* added margin to move text down */
+  position: relative;
+  cursor: pointer;
+}
+
+.fa-magnifying-glass{
+  margin-left: 25%;
+  margin-top: 30px;
+  font-size: 20px; /* increased font size */
+  font-weight: bold;
+  margin-bottom: 10px; /* added margin to move text down */
+  position: relative;
+  cursor: pointer;
+}
+
+.offer{
+  margin-left: 30px;
+  margin-top: 10px;
+  border: 2px solid rgb(182, 140, 90);
+  background-color: rgb(182, 140, 90);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  width: 150px;
+  height: 50px;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.offer:hover{
+  background-color: white;
+  color: rgb(182, 140, 90);
+  border: 2px solid;
+  transition: all .3s;
+}
+
+.third-container{
+  height: 500px;
+  background-color:rgb(22, 37, 66);
+  display: flex;
+  flex-direction: column;
+}
+
+.fourth-container{
+  background-color: rgb(240, 240, 240);
+  display: flex;
+}
+
+.Deneme{
+  color: white;
+  width: 550px;
+  font-size: 36px;
+  font-weight: bold;
+  display: flex;
+  margin-left: 20%;
+  margin-top: 100px;
+}
+
+.abouts{
+  flex-direction: column;
+  display: flex;
+  margin-left: 8%;
+  color: white;
+  width: 900px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.contact-third{
+  font-size: 14px;
+  color: white;
+  border: 2px solid white;
+  width: 100px;
+  height: 60px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 2px;
+  margin-left: 27%;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.contact-third:hover{
+  color: rgb(182, 140, 90);
+}
+
+.divider{
+  display: flex;
+  align-items: center;
+  height: 20px;
+  gap: 34px;
+  margin-top: 13%;
+}
+
+.elementor-divider{
+  height: 3px;
+  width: 50px;
+  background: rgb(182, 140, 90);
+  display: flex;
+}
+
+.some-texts{
+  display: block;
+  position: relative;
+  flex-direction: row;
+  margin-left: 20%;
+  margin-top: 100px;
+  margin-right: 30px;
+}
+
+.more-about-us{
+  color: rgb(182, 140, 90);
+  display: flex;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.law-office{
+  margin-top: 16px;
+  font-size: 40px;
+  font-weight: bold;
+  height: 45px;
+  display: flex;
+  margin-bottom: 0;
+}
+
+.location{
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.more-text{
+  width: 400px;
+  font-size: 17px;
+  line-height: 32px;
+  letter-spacing: -0.85px;
+  word-spacing: 8px;
+}
+
+.lawyer-img{
+  height: 890px;
+  width: 620px;
+  margin-top: 60px;
+}
+
+.fifth-header{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: 16px;
+  width: 400px;
+  height: 100px;
+  margin-top: 30px;
+}
+
+.fifth-container{
+  margin-top: 7%;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(240, 240, 240);
+}
+
+.fifth-container-elements{
+  margin-top: 130px;
+}
+
+.our-services{
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  margin-top: 30%;
+  color: rgb(84, 89, 95);
+}
+
+.agreement-image{
+  height: 50px;
+  width: 50px;
+  margin-top: 35px;
+  margin-right: 30px;
+}
+
+.agreement{
+  margin-top: 70px;
+  display: flex;
+  background-color: white;
+  width: 500px;
+  height: 150px;
+  padding: 10px 20px;
+  background: linear-gradient(to right, rgb(22, 37, 66) 1%, rgb(255, 255, 255) 1%)
+}
+
+.agreement-header{
+  color: rgb(22, 37, 66);
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.7px;
+}
+
+.agreement-text{
+  color: rgb(102, 102, 102);
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.health-lawsuit-image{
+  height: 50px;
+  width: 50px;
+  margin-top: 35px;
+  margin-right: 30px;
+}
+
+.health-lawsuit{
+  display: flex;
+  width: 500px;
+  height: auto;
+  padding: 10px 20px;
+  border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+.health-lawsuit-header{
+  color: rgb(22, 37, 66);
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.7px;
+}
+
+.health-lawsuit-text{
+  color: rgb(102, 102, 102);
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.tokmak{
+  display: flex;
+  height: 850px;
+  width: 600px;
+  border-radius: 30px;
+  margin-top: 200px;
+  margin-left: 50px;
+}
+
+.sixth-container{
+  background-color: rgb(252, 252, 252);
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding-top: 50px;
+}
+
+.sixth-container-left{
+  height: 500px;
+  background-color: white;
+  width: 500px;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.sixth-header{
+  font-size:  28px;
+  color: rgb(22, 37, 66);
+  display: flex;
+  margin-top: 5px;
+  font-weight: 700;
+}
+
+.sixth-header-main{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.strong{
+  color: rgb(102, 102, 102);
+}
+
+.sixth-second-header{
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  color: rgb(182, 140, 90);
+  font-size: 22px;
+}
+
+.sixth-text{
+  color: rgb(102, 102, 102);
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-align: center;
+  display: block;
+  padding: 20px;
+}
+
+.communication{
+  background-color: rgb(182, 140, 90);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  width: 150px;
+  height: 50px;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.communication{
+  margin-right: auto;
+  margin-left: auto;
+  border: 2px solid rgb(182, 140, 90);
+  background-color: rgb(182, 140, 90);
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  width: 150px;
+  height: 50px;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.communication:hover{
+  background-color: white;
+  color: rgb(182, 140, 90);
+  border: 2px solid;
+}
+
+.sixth-container-right{
+  height: 500px;
+  background-color: rgb(22, 37, 66);
+  width: 500px;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.sixth-header-2{
+  font-size:  28px;
+  color: white;
+  display: flex;
+  margin-top: 5px;
+  font-weight: 700;
+}
+
+.sixth-header-main-2{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.sixth-second-header-2{
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 22px;
+}
+
+.sixth-text-2{
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-align: center;
+  display: block;
+  padding: 20px;
+}
+
+
+.communication-2{
+  margin-right: auto;
+  margin-left: auto;
+  border: 2px solid white;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  width: 150px;
+  height: 50px;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.communication-2:hover{
+  background-color: rgb(182, 140, 90);
+  color: white;
+  border: 2px solid rgb(182, 140, 90);
+}
+
+.line{
+  display: flex;
+  justify-content: space-between;
+}
+
+.seventh-container{
+  display: flex;
+  background-color: rgb(252, 252, 252);
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.lines{
+  flex-direction: column;
+  display: flex;
+  width: 1050px;
+  justify-content: space-around;
+  position: relative;
+  cursor: pointer;
+}
+
+.text{
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.fa-arrow-down{
+  color: rgb(182, 140, 90);
+}
+
+.image{
+  height: auto;
+  width: auto;
+  margin-left: 50px;
+}
+
+.eighth-container{
+  background-color: rgb(22, 37, 66);
+  height: 700px;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+}
+
+.eighth-left-side{
+  height: 600px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.eighth-header{
+  color: rgb(255, 217, 0);
+  font-size: 28px;
+  margin: 0
+}
+
+.eighth-text{
+  margin: 0;
+  color: rgb(170, 181, 204);
+  font-size: 17px;
+  line-height: 32px;
+}
+
+.menu{
+  height: 600px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  line-height: 30px;
+}
+
+.quick-menu{
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+}
+
+.other-menus{
+  font-size: 17px;
+  color: rgb(170, 181, 204);
+  transition: all .3s;
+}
+
+.articles-2:hover, .common-questions:hover, .communication-3:hover, .offer-2:hover, .collection:hover{
+  transition: all .3s;
+  color: rgb(182, 140, 90);
+}
+
+.menu-2{
+  height: 600px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  line-height: 30px;
+}
+
+.last-articles{
+  font-size: 22px;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+}
+
+.other-menus-2{
+  font-size: 17px;
+  color: rgb(170, 181, 204);
+}
+
+.menu-3{
+  padding: 0 20px;
+  height: 600px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  line-height: 30px;
+}
+
+.holiday{
+  text-align: left;
+  margin: 0;
+  
+}
+
+.art{
+  display: flex;
+  text-align: left;
+}
+
+.fa-phone{
+  padding-right:5px;
+  color: rgb(182, 140, 90);
+}
+
+.fa-envelope{
+  padding-right:5px;
+  color: rgb(182, 140, 90);
+}
+
+.fa-bell{
+  padding-right:5px;
+  color: rgb(182, 140, 90);
+}
+
+.last-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(102, 102, 102);
+  background-color: rgb(27, 43, 75);
+  width: 1170px;
+  height: 65px;
+  position: absolute;
+  margin-right: 900px;
+  margin-top: 500px;
+}
+
+@keyframes moveAndRotate{
+  0% {
+      transform: translateY(100px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+
+  0%{
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity{
+  0%{
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.texts{
+  display: none;
+  transition: all .3s;
+}
+
+.texts:active{
+  transition: all .3s;
+}
